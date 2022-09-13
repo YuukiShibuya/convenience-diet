@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* hearder */
+.site-header{
+  position: relative;
+  background-color: #def7ff;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.wrapper{
+  max-width: 1140px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header_wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* main */
+/* main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-size: 1.5em;
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#main_image {
+  margin-bottom: 30px;
+}
+
+#main_content {
+  float:left;
+  width: 600px;
+}
+
+#sidebar {
+  float: right;
+  width: 300px;
+}
+
+#home h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 5px 10px;
+  text-align: left;
+  border-bottom: 1px solid #614226;
+  border-left: 10px solid #614226;
+}
+
+#info dl {
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+#info dt {
+  float:left;
+  width: 8em;
+}
+
+#info dt,
+#info dd{
+  line-height: 3;
+}
+
+#hoge li {
+  line-height: 1.5;
+  margin-left: 20px;
+} */
+
+/* sidebar */
+/* #sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar ul li {
+  margin-bottom: 20px;
+} */
+
+/* footer */
+/* footer {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  background-color: #614226;
+}
+
+footer ul {
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer ul li a {
+  color: white;
+}
+
+footer ul li a:link,
+footer ul li a:visited {
+  text-decoration: none;
+}
+
+footer ul li a:hover,
+footer ul li a:active{
+  text-decoration: underline;
+} */

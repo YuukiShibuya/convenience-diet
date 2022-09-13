@@ -1,12 +1,3 @@
-// document.currentScript.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
-
-// document.currentScript.insertAdjacentHTML('beforebegin', '<p>Bye</p>');
-
-/* id = targetの属性に対して、コンテンツを指定する */
-/* id属性よりも下に記載する必要あり */
-//let element = document.getElementById('target');
-//element.innerHTML = 'Good bye bye';
-
 function getElement(){
   let shop = document.getElementById('shop');
   //console.log('shop: ' + shop.textContent);

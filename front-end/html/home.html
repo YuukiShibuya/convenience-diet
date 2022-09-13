@@ -1,68 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>コンビニ飯自動生成</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>コンビニ飯自動生成</title>
+    <link rel="stylesheet" href="../css/stylesheets/home.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper site-header_wrapper">
+        <a href="dummy.html"><img src="https://via.placeholder.com/160x80" alt="baner1" class="logo"></a>
+        <a href="home.html" class="title">コンビニ飯自動生成</a>
+        <a href="dummy.html"><img src="https://via.placeholder.com/80x80" alt="baner1" class="menu"></a>
+      </div>
+    </header>
 
-<!-- <p id="target">さようなら</p> -->
+    <p>カロリーと金額を設定するとメニューを自動生成できます</p>
 
-<p>カロリーと金額を設定するとメニューを自動生成できます</p>
+    <!--コンビニの設定-->
+    <!--店名コード：1=セブン、2=ファミマ、3=ローソン-->
+    <p>コンビニを選択してください</p>
+    <p id="shop">1</p>
 
-<!--コンビニの設定-->
-<!--店名コード：1=セブン、2=ファミマ、3=ローソン-->
-<p>コンビニを選択してください</p>
-<p id="shop">1</p>
+    <!--カロリーの設定-->
+    <p>目標カロリーを設定してください</p>
+    <p id="cal">800</p>
 
-<!--カロリーの設定-->
-<p>目標カロリーを設定してください</p>
-<p id="cal">800</p>
+    <!--金額の設定-->
+    <p>金額を設定してください</p>
+    <p id="price">800</p>
 
-<!--金額の設定-->
-<p>金額を設定してください</p>
-<p id="price">800</p>
+    <!--品数の設定-->
+    <p>メニューの品数を設定してください</p>
+    <p id="item">3</p>
 
-<!--品数の設定-->
-<p>メニューの品数を設定してください</p>
-<p id="item">3</p>
+    <button onClick="getElement();">メニューを作る</button>
 
-<button onClick="getElement();">メニューを作る</button>
+    <!--jsファイルへのリンク-->
+    <script src="../js/first.js"></script>
 
+    <!--jsが無効になった場合に表示させるコンテンツ-->
+    <noscript>
+      <p>このサイトではJavaScriptを使用しています</p>
+      <p>ブラウザの設定からJavaScriptを有効にしてください</p>
+    </noscript>
 
-
-<!-- <p>フルーツの一覧</p>
-
-<div>
-<p>スイカ</p>
-<p>さくらんぼ</p>
-</div>
-
-<div>
-<p>イチゴ</p>
-<p>みかん</p>
-</div> -->
-
-
-
-
-
-
-
-
-
-
-
-<!--jsファイルへのリンク-->
-<script src="../js/first.js">
-</script>
-
-<!--jsが無効になった場合に表示させるコンテンツ-->
-<noscript>
-  <p>
-  このサイトではJavaScriptを使用しています
-  </p>
-</noscript>
-
-</body>
+  </body>
 </html>
