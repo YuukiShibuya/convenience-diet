@@ -6,34 +6,96 @@
     <link rel="stylesheet" href="../css/stylesheets/home.css">
   </head>
   <body>
-    <header class="site-header">
-      <div class="wrapper site-header_wrapper">
-        <a href="dummy.html"><img src="https://via.placeholder.com/160x80" alt="baner1" class="logo"></a>
-        <a href="home.html" class="title">コンビニ飯自動生成</a>
-        <a href="dummy.html"><img src="https://via.placeholder.com/80x80" alt="baner1" class="menu"></a>
+    <header>
+      <div class="container">
+
+        <!--ロゴ画像也-->
+        <div class="header-left">
+          <a class="top-logo" href="dummy.html"><img src="https://via.placeholder.com/160x80" alt="baner1" class="logo"></a>
+        </div>
+
+
+        <!--メニュー也-->
+        <div class="header-right">
+          <a class="top-menu" href="dummy.html"><img src="https://via.placeholder.com/80x80" alt="baner1" class="menu"></a>
+        </div>
+
+        <!--タイトル也-->
+        <div class="header-middle">
+          <h1 class="site-title">コンビニ飯自動生成</h1>
+        </div>
+
+        
       </div>
+      
     </header>
 
-    <p>カロリーと金額を設定するとメニューを自動生成できます</p>
+    <!--一番上の案内-->
+    <div class="top-wrapper">
+      <div class="container">
+        <h1 class="top-navi">カロリーと金額を設定するとメニューを自動生成できます</h1>
+      </div>
+    </div>
+
 
     <!--コンビニの設定-->
     <!--店名コード：1=セブン、2=ファミマ、3=ローソン-->
-    <p>コンビニを選択してください</p>
-    <p id="shop">1</p>
+    <div class="store-wrapper">
+      <div class="container">
+        <h2>コンビニを選択してください</h2>
 
-    <!--カロリーの設定-->
-    <p>目標カロリーを設定してください</p>
-    <p id="cal">800</p>
+        <div class="btn-wrapper">
+          <div class="btn">
+            <div class="seven" ></div>
+            <!-- <p>セブンイレブン</p> -->
+          </div>
+          <div class="btn">
+            <div class="fami-mart" ></div>
+            <!-- <p>ファミマ</p> -->
+          </div>
+          <div class="btn">
+            <div class="lawson"></div>
+            <!-- <p>ローソン</p> -->
+          </div>
+          
+        </div>
 
-    <!--金額の設定-->
-    <p>金額を設定してください</p>
-    <p id="price">800</p>
+      </div>
+    </div>
 
-    <!--品数の設定-->
-    <p>メニューの品数を設定してください</p>
-    <p id="item">3</p>
 
-    <button onclick="getElement();">メニューを作る</button>
+    <!--スライドバー-->
+    <div class="parameter-wrapper">
+      <div class="container">
+
+        
+        <div class="range calorie">
+          <h2>目標カロリーを設定してください</h2>
+          <input class="slider-calorie" type="range" min="0" max="100" step="10">
+        </div>
+
+
+        
+        <div class="range money">
+          <h2>金額を設定してください</h2>
+          <input class="slider-money" type="range" min="0" max="100" step="10">
+        </div>
+
+
+        
+        <div class="range menu">
+          <h2>メニューの品数を設定してください</h2>
+          <input class="slider-menu" type="range" min="0" max="100" step="10">
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+    
+    <button class="made" onclick="getElement();">メニューを作る</button>
 
     <!--jsファイルへのリンク-->
     <script src="../js/first.js"></script>
